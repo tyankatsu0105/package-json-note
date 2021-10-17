@@ -1,6 +1,6 @@
 {
   "name": "package-json-note",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Create/Edit note for package.json to all developers",
   "keywords": [],
   "homepage": "https://github.com/tyankatsu0105/package-json-note#readme",
