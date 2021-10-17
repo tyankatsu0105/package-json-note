@@ -14,12 +14,15 @@
   "license": "MIT",
   "author": "tyankatsu <frips.ryilsufupe+dev@gmail.com> (https://tyankatsu.com)",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "jest",
     "build": "tsc",
+    "release": "shipjs prepare",
+    "test": "jest",
     "ts": "node -r esbuild-register src/index.ts",
-    "typecheck": "tsc --noEmit",
-    "release": "shipjs prepare"
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@jest/types": "27.2.5",
