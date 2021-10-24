@@ -25,7 +25,7 @@ npm install -D package-json-note
 
 - [ ] cli
   - [ ] check
-  - [ ] help
+  - [x] help
   - [ ] init
   - [ ] package-json-path
 - [ ] load package.json at same directory

@@ -11,9 +11,12 @@
     "type": "git",
     "url": "git+https://github.com/tyankatsu0105/package-json-note.git"
   },
+  "bin": {
+    "package-json-note": "dist/bin/package-json-note.js"
+  },
   "license": "MIT",
   "author": "tyankatsu <frips.ryilsufupe+dev@gmail.com> (https://tyankatsu.com)",
-  "main": "dist/index.js",
+  "main": "dist/cli/index.js",
   "files": [
     "dist"
   ],
@@ -21,8 +24,9 @@
     "build": "tsc",
     "release": "shipjs prepare",
     "test": "jest",
-    "ts": "node -r esbuild-register src/index.ts",
-    "typecheck": "tsc --noEmit"
+    "ts": "node -r esbuild-register src/bin/package-json-note",
+    "typecheck": "tsc --noEmit",
+    "sandbox": "sh scripts/sandbox"
   },
   "devDependencies": {
     "@jest/types": "27.2.5",
@@ -44,5 +48,11 @@
     "jest": "27.2.5",
     "shipjs": "0.24.0",
     "typescript": "4.4.4"
+  },
+  "dependencies": {
+    "boxen": "5.1.2",
+    "commander": "8.2.0",
+    "cosmiconfig": "7.0.1",
+    "flatten-anything": "2.0.4"
   }
 }

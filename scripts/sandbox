@@ -1,0 +1,7 @@
+#!/bin/bash
+npm link
+cd sandbox
+npm link package-json-note
+clear
+
+npx package-json-note
