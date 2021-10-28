@@ -1,6 +1,6 @@
 import { program } from "commander";
 
-import { init } from "../lib";
+import { check, init } from "../lib";
 import { PROJECT_NAME, VERSION } from "../shared";
 import { OptionValues } from "../types";
 
@@ -27,5 +27,6 @@ const options = program.opts<OptionValues>();
 
 const main = () => {
   if (options.init) init();
+  if (options.check) check();
 };
 main();
