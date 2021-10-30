@@ -23,12 +23,11 @@ npm install -D package-json-note
 
 ## Roadmap
 
-- [ ] cli
-  - [ ] check
+- [x] cli
+  - [x] check
   - [x] help
-  - [ ] init
-  - [ ] package-json-path
-- [ ] load package.json at same directory
+  - [x] init
+- [x] load package.json at same directory
 
 ## License
 
