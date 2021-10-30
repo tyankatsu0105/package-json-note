@@ -1,3 +1,4 @@
+import consola from "consola";
 import { writeFileSync } from "fs";
 
 import {
@@ -21,6 +22,8 @@ export const init = () => {
       )
     )
   );
+
+  consola.success(`Created ${CONFIG_NAME}`);
 };
 
 const createTemplate = (packageJson: string) =>

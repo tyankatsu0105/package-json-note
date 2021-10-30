@@ -10,5 +10,5 @@ type PackageJson = {
 const pkg: PackageJson = require("../../../package.json");
 
 export const VERSION = pkg.version;
-export const PROJECT_NAME = "package-json-note";
-export const CONFIG_NAME = `${PROJECT_NAME}.js`;
+export const PROJECT_NAME = "package-json-note" as const;
+export const CONFIG_NAME = `${PROJECT_NAME}.js` as const;
