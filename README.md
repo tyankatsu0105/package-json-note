@@ -1,3 +1,5 @@
+<p align="center"><img width="300px" height="280px" src="https://raw.githubusercontent.com/tyankatsu0105/package-json-note/main/assets/logo.png" alt=""></p>
+
 <h2 align="center">package-json-note</h2>
 <p align="center">
 Create/Edit note for package.json to all developers.
