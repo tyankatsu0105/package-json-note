@@ -33,25 +33,68 @@ package-json-note --init
 
 After running, `package-json-note.js` is created.
 
+```js
+module.exports = {
+  name: "",
+  version: "",
+  description: "",
+  main: "",
+  "scripts.test": "",
+  keywords: "",
+  author: "",
+  license: "",
+  "devDependencies.package-json-note": "",
+};
+```
+
 #### check
 
 ```bash
 package-json-note --check
 ```
 
-After running, `ERROR` and `WARN` is showed on console.
+If there is something wrong, `ERROR` and `WARN` is showed on console.
+
+```json
+{
+  "name": "sample",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "package-json-note": "1.0.0",
+    "eslint": "8.0.0"
+  }
+}
+```
+
+```js
+module.exports = {
+  name: "",
+  version: "",
+  description: "",
+  main: "",
+  "scripts.test": "",
+  keywords: "",
+  author: "",
+  license: "",
+  "devDependencies.package-json-note": "",
+};
+```
 
 ```bash
  ERROR  These keys does not exist at package.json
 
-deps
-foo
-bar
+author
+license
 
  WARN  You can add these keys to note
 
-engines
-engines.node
+devDependencies.eslint
 ```
 
 #### help
