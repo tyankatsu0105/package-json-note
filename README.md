@@ -23,13 +23,42 @@ Create/Edit note for package.json to all developers.
 npm install -D package-json-note
 ```
 
-## Roadmap
+### CLI
 
-- [x] cli
-  - [x] check
-  - [x] help
-  - [x] init
-- [x] load package.json at same directory
+#### init
+
+```bash
+package-json-note --init
+```
+
+After running, `package-json-note.js` is created.
+
+#### check
+
+```bash
+package-json-note --check
+```
+
+After running, `ERROR` and `WARN` is showed on console.
+
+```bash
+ ERROR  These keys does not exist at package.json
+
+deps
+foo
+bar
+
+ WARN  You can add these keys to note
+
+engines
+engines.node
+```
+
+#### help
+
+```bash
+package-json-note --help
+```
 
 ## License
 
